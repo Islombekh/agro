@@ -1,0 +1,32 @@
+.about__section {
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 5rem;
+}
+.about__section-img {
+}
+.section__imhg-content {
+  object-fit: cover;
+  border-radius: 20px;
+}
+.about__section-content {
+}
+.about__section-title {
+  margin-bottom: 2rem;
+  font-size: $h4-font-sz;
+}
+.about__section-desc {
+  text-align: justify;
+  font-size: 1.7rem;
+  font-weight: $main-font-w;
+}
+
+.about__section-descrip {
+  width: 100%;
+  max-width: 800px;
+  font-size: 1.7rem;
+  font-weight: $main-font-w;
+}
+.about__content {
+}

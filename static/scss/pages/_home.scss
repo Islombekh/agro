@@ -1,0 +1,350 @@
+.hero {
+  &__section {
+    display: flex;
+    background: $color-bg;
+    justify-content: space-between;
+
+    @include responsive(mobilemed) {
+      border-radius: 20px;
+    }
+  }
+
+  &__content {
+    margin-top: 6.8rem;
+    margin-left: 4.3rem;
+    width: 100%;
+    max-width: 650px;
+
+    @include responsive(tabletbig) {
+      max-width: 550px;
+    }
+
+    @include responsive(tablet) {
+      max-width: 450px;
+    }
+
+    @include responsive(tabletmd) {
+      max-width: 400px;
+    }
+
+    @include responsive(mobilemed) {
+      margin-top: 3rem;
+      margin-left: 3rem;
+    }
+  }
+
+  &__title {
+    @include responsive(tabletmd) {
+      font-size: $main-font-sz;
+    }
+    @include responsive(mobile) {
+      font-size: $main-font-sz-2;
+    }
+
+    @include responsive(mobilemd) {
+      font-size: $main-font-sz-3;
+    }
+  }
+
+  &__desc {
+    font-weight: $main-font-w-4;
+    font-size: $h1-font-sz;
+    line-height: $h1-line-h;
+    letter-spacing: -1.5px;
+
+    @include responsive(tabletbig) {
+      font-size: $h2-font-sz;
+    }
+
+    @include responsive(tablet) {
+      font-size: $h2-font-sz-2;
+    }
+
+    @include responsive(tabletmd) {
+      font-size: $h3-font-sz;
+    }
+
+    @include responsive(mobilebig) {
+      font-size: $h3-font-sz-2;
+    }
+
+    @include responsive(mobile) {
+      font-size: $h3-font-sz-3;
+      letter-spacing: 0;
+    }
+
+    @include responsive(mobilemd) {
+      font-size: $h4-font-sz-2;
+    }
+  }
+
+  &__img-content {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+.second {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+  padding: 3rem;
+
+  @include responsive(tabletbig) {
+    gap: 3rem;
+  }
+
+  @include responsive(mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.second__section:nth-child(n) {
+  flex-direction: row-reverse;
+
+  @include responsive(mobile) {
+    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.second__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+  padding: 3rem;
+
+  @include responsive(tabletbig) {
+    gap: 3rem;
+  }
+
+  @include responsive(mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-title {
+    width: 100%;
+    max-width: 500px;
+    font-weight: $main-font-w-3;
+    font-size: $h3-font-sz;
+    text-align: center;
+
+    @include responsive(tabletbig) {
+      font-size: $h3-font-sz-2;
+    }
+
+    @include responsive(tablet) {
+      font-size: $h3-font-sz-3;
+    }
+
+    @include responsive(tabletmd) {
+      font-size: $h3-font-sz-3;
+    }
+
+    @include responsive(mobilebig) {
+      font-size: $h4-font-sz;
+    }
+
+    @include responsive(mobile) {
+      font-size: $h4-font-sz-2;
+    }
+
+    @include responsive(mobilemd) {
+      font-size: $h4-font-sz-3;
+    }
+
+    @include responsive(mobilemed) {
+      // font-size: $main-font-sz-2;
+      max-width: 300px;
+    }
+  }
+
+  &-img {
+    border-radius: 50%;
+    object-fit: cover;
+
+    @include responsive(tabletbig) {
+      width: 370px;
+      height: 370px;
+    }
+
+    @include responsive(tablet) {
+      width: 330px;
+      height: 330px;
+    }
+
+    @include responsive(tabletmd) {
+      width: 300px;
+      height: 300px;
+    }
+
+    @include responsive(mobilebig) {
+      width: 250px;
+      height: 250px;
+    }
+
+    @include responsive(mobile) {
+      width: 200px;
+      height: 200px;
+    }
+
+    @include responsive(mobilemed) {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+.seeds__section {
+  background: $color-bg;
+  padding: 10rem;
+  margin: 6rem 0;
+  border-radius: 30px;
+
+  @include responsive(mobile) {
+    padding: 5rem;
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+
+    @include responsive(mobile) {
+      margin-top: 7rem;
+    }
+
+    @include responsive(mobile) {
+      margin-top: 4rem;
+    }
+  }
+
+  &-title {
+    font-weight: $main-font-w-2;
+    font-size: $h2-font-sz-2;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    @include responsive(tablet) {
+      font-size: $h3-font-sz;
+      max-width: 600px;
+    }
+
+    @include responsive(tabletmd) {
+      font-size: $h3-font-sz-2;
+      max-width: 500px;
+    }
+
+    @include responsive(mobile) {
+      font-size: $h3-font-sz-3;
+      max-width: 400px;
+    }
+
+    @include responsive(mobilemd) {
+      font-size: $h4-font-sz;
+      max-width: 400px;
+    }
+
+    @include responsive(mobilemed) {
+      font-size: $h4-font-sz-3;
+      max-width: 250px;
+    }
+  }
+}
+.seeds__name {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+
+  @include responsive(mobilemd) {
+    gap: 4rem;
+  }
+
+  &-content {
+    font-weight: $main-font-w-3;
+    font-size: $h2-font-sz-2;
+
+    @include responsive(tablet) {
+      font-size: $h3-font-sz;
+    }
+
+    @include responsive(tabletmd) {
+      font-size: $h3-font-sz-2;
+    }
+
+    @include responsive(mobile) {
+      font-size: $h3-font-sz-3;
+    }
+
+    @include responsive(mobilemd) {
+      font-size: $h4-font-sz;
+    }
+
+    @include responsive(mobilemed) {
+      font-size: $h4-font-sz-3;
+    }
+  }
+}
+
+.flower__section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  // gap: 7.5rem;
+  width: 100%;
+  gap: 4rem;
+  padding: 3rem;
+  margin: 4rem 0;
+
+  @include responsive(tabletbig) {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  @include responsive(tablet) {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  @include responsive(mobilemed) {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}
+.flower__section-content {
+  background-color: #ffffff;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.flower__section-content:hover {
+  box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.1);
+}
+.flower__section-content__img {
+  width: 100%;
+  max-width: 290px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.flower__section-content__desc {
+  width: 100%;
+  max-width: 250px;
+  font-weight: $main-font-w;
+  font-size: $main-font-sz-2;
+  line-height: $h1-line-h;
+  text-align: center;
+}
+
+.desc__wrapper {
+  padding: 1rem;
+}
+
+.footer__comp-info {
+  @include responsive(mobilemed) {
+    font-size: 1.4rem;
+  }
+}

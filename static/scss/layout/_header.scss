@@ -1,0 +1,98 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.site__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site__logo {
+}
+.site__logo-link {
+  font-weight: $main-font-w-2;
+  font-size: $h4-font-sz-2;
+  line-height: $h4-line-h;
+  letter-spacing: -1.5px;
+
+  @include responsive(mobilemed) {
+    font-size: 1.7rem;
+  }
+
+  @include responsive(mobilemedium) {
+    font-size: 1.5rem;
+  }
+}
+.site__logo-img {
+}
+.agro {
+  color: $color-green;
+}
+.seed {
+  color: $color-yellow;
+}
+.search__form {
+  display: flex;
+  align-items: center;
+  background-color: #fefefe;
+  border: 1px solid $color-green;
+  border-radius: 15px;
+  padding: 5px;
+  width: 100%;
+  align-items: center;
+
+  @include responsive(mobile) {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.search__form-header {
+  @include responsive(mobile) {
+    display: none;
+  }
+}
+
+.search__form-hero {
+  display: none;
+  @include responsive(mobile) {
+    display: flex;
+  }
+}
+
+.search__img {
+  margin-right: 2.6rem;
+}
+.search__input {
+  border: none;
+  font-size: 1.5rem;
+  outline: none;
+}
+.site__nav {
+}
+.site__nav-list {
+  display: flex;
+  gap: 3rem;
+
+  @include responsive(mobile) {
+    margin-right: 0;
+    gap: 2rem;
+  }
+}
+.site__nav-item {
+  color: $color-darc;
+}
+.site__nav-link {
+  color: $color-darc;
+
+  @include responsive(mobilemed) {
+    font-size: 1.4rem;
+  }
+}
+
+.site__nav-link:hover {
+  font-weight: bold;
+}

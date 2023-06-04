@@ -1,0 +1,140 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block content %}
+  <!DOCTYPE html>
+ <html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="../static/css/main.css" /> -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Agroplanet Seeds | Gul haqida</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container site__header">
+        <div class="site__logo">
+          <a href="{% url 'home' %}" class="site__logo-link"
+            ><img src="" alt="" class="site__logo-img" /><span class="agro"
+              >Agroplanet</span
+            >
+            <span class="seed">Seeds</span></a
+          >
+        </div>
+
+        <div class="site__nav">
+          <ul class="site__nav-list">
+            <li class="site__nav-item">
+              <a href="{% url 'home' %}" class="site__nav-link">Bosh Sahifa</a>
+            </li>
+            <li class="site__nav-item">
+              <a href="{% url 'page' %}" class="site__nav-link">Gullar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <main class="main">
+        <div class="about-info"></div>
+      </main>
+      <footer class="footer">
+        <div class="contact__section">
+          <ul class="contact__list">
+            <li class="contact__item">
+              <span class="agro">Agroplanet</span
+              ><span class="seed">Seeds</span>
+            </li>
+            <li class="contact__item">
+              <img
+                src="../static/images/Location.svg"
+                alt="location icon"
+                class="contact__img"
+                width="20"
+                height="20"
+              /><a
+                href="https://maps.app.goo.gl/QNuYXcu6PEYx7Jf17"
+                class="contact__link contact__link-location"
+                >Andijon Boburshox ko`chasi 44</a
+              >
+            </li>
+            <li class="contact__item">
+              <img
+                src="../static/images/Calling.svg"
+                alt="phone img"
+                class="contact__img"
+                width="20"
+                height="20"
+              /><a class="contact__link" href="tel:+998 93 441 99 11"
+                >+998 93 441 99 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom-content">
+            <h5 class="footer__bottom-title">Maslahat oling</h5>
+            <p class="footer__bottom-desc">
+              Gullaringizni parvarishlashda qiynalyabsizmi, gullaringiz
+              kasallikga uchrayabdimi unday holda bizdan maslahat oling.
+            </p>
+          </div>
+          <ul class="footer__maxsulot-list">
+            <li class="footer__maxsulot-item footer__content-title">
+              Mahsulotlar
+            </li>
+            <li class="footer__maxsulot-item">
+              <a href="#" class="footer__maxsulot-link">Gullar</a>
+            </li>
+            <li class="footer__maxsulot-item">
+              <a href="#" class="footer__maxsulot-link">Urug`lar</a>
+            </li>
+            <li class="footer__maxsulot-item">
+              <a href="#" class="footer__maxsulot-link">O`g`itlar</a>
+            </li>
+            <li class="footer__maxsulot-item">
+              <a href="#" class="footer__maxsulot-link">Tuvaklar</a>
+            </li>
+          </ul>
+          <ul class="footer__social-list">
+            <li class="footer__social-item footer__content-title">
+              Ijtimoiy tarmoqlar
+            </li>
+            <li class="footer__social-item">
+              <img
+                src="../static/images/icon-telegram-app.svg"
+                alt="Telegram icon"
+                class="footer__social-img"
+              /><a
+                href="https://t.me/agroplanetseeds"
+                class="footer__social-link"
+                width="20"
+                height="20"
+                >Telegram</a
+              >
+            </li>
+            <li class="footer__social-item">
+              <img
+                src="../static/images/icon-instagram.svg"
+                alt="Instagram icon"
+                class="footer__social-img"
+                width="23"
+                height="23"
+              /><a
+                href="https://www.instagram.com/agroplanet_seeds?r=nametag"
+                class="footer__social-link"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+        <hr class="footer__line" />
+        <h6 class="footer__comp-info">2019-2023 Agroplanet Seeds</h6>
+      </footer>
+    </div>
+
+    <script src="../static/js/page.js"></script>
+  </body>
+ </html>
+{% endblock %}

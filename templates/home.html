@@ -1,0 +1,280 @@
+{% load static %}
+{% block content %}
+  <!DOCTYPE html>
+ <html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <title>Agroplanet Seeds | Bosh sahifa</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container site__header">
+        <div class="site__logo">
+          <a href="{% url 'home' %}" class="site__logo-link"
+            ><img src="" alt="" class="site__logo-img" /><span class="agro"
+              >Agroplanet</span
+            >
+            <span class="seed">Seeds</span></a
+          >
+        </div>
+
+        <div class="site__nav">
+          <ul class="site__nav-list">
+            <li class="site__nav-item">
+              <a href="{% url 'home' %}" class="site__nav-link">Bosh Sahifa</a>
+            </li>
+            <li class="site__nav-item">
+              <a href="{% url 'page' %}" class="site__nav-link">Gullar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <main class="main">
+        <div>
+          <form class="search__form search__form-hero">
+            <img
+              src="../static/images/search.svg"
+              alt="search img"
+              class="search__img"
+            />
+            <input
+              type="search"
+              name="search"
+              class="search__input"
+              placeholder="Buyerda qidiring..."
+              aria-label="Buyerda qidiring..."
+              required
+              autocomplete="off"
+            />
+          </form>
+        </div>
+
+        <div class="hero__section">
+          <div class="hero__content">
+            <h3 class="hero__title agro">AGROPLANET SEEDS</h3>
+            <h1 class="hero__desc">
+              ATROFINGIZDAGI <span class="agro">GO`ZALLIKNI</span> BIZ BILAN
+              YARATING
+            </h1>
+          </div>
+          <div class="hero__img">
+            <img
+              src="../static/images/hero img.svg"
+              alt="gul rasmi"
+              class="hero__img-content"
+            />
+          </div>
+        </div>
+        <div class="second__section">
+          <div>
+            <h2 class="second__section-title">
+              Agroplanet Seeds siz azizlar uchun uchun yevropa davlatlaridan
+              keltirilgan ajoyib turdagi gullarni taqdim etadi
+            </h2>
+          </div>
+          <div>
+            <img
+              src="../static/images/gul.jpg"
+              alt="gul rasmi"
+              class="second__section-img"
+              width="400"
+              height="400"
+            />
+          </div>
+        </div>
+        <div class="seeds__section">
+          <div class="seeds__name">
+            <ul class="seeds__name-list">
+              <li class="seeds__name-content agro">Satimex</li>
+              <li class="seeds__name-content agro">PanAmerican</li>
+            </ul>
+            <ul class="seeds__name-list">
+              <li class="seeds__name-content agro">Syngenta</li>
+              <li class="seeds__name-content agro">Sakata</li>
+            </ul>
+          </div>
+          <div class="seeds__section-content">
+            <h2 class="seeds__section-title">
+              Bir yillik hamda ko`p yillik gul urug`lari
+            </h2>
+          </div>
+        </div>
+        <div class="second">
+          <div>
+            <h2 class="second__section-title">
+              Ajoyib turdagi gullaringiz uchun turli xil ranglardagi va betakror
+              dizayndagi gul tuvaklari
+            </h2>
+          </div>
+          <div>
+            <img
+              src="../static/images/tuvaklar.jpg"
+              alt="gul rasmi"
+              class="second__section-img"
+              width="400"
+              height="400"
+            />
+          </div>
+        </div>
+        <div class="flower__section">
+          <div class="flower__section-content">
+            <img
+              src="../static/images/kalateya.jpg"
+              alt="kalateya rasmi"
+              class="flower__section-content__img"
+            />
+            <div class="desc__wrapper">
+              <p class="flower__section-content__desc">
+                Xonadon va ofis muhitini yashil yordamchilar bilan yanada
+                yetarli darajada o'zgacha ko'rinishga olib kelishda bizning
+                gullar juda yaqindan yordam berishiga ishonchimiz komil.
+              </p>
+            </div>
+          </div>
+          <div class="flower__section-content">
+            <img
+              src="../static/images/ka.jpg"
+              alt="monstera rasmi"
+              class="flower__section-content__img"
+            />
+            <div class="desc__wrapper">
+              <p class="flower__section-content__desc">
+                Har qanday sharoitni tropik gullar bilan ajoyib manzaraga
+                aylantiring. Bunda biz sizga yevropa davlatlaridan keltirilgan
+                ajoyib turdagi gullar bilan yordamchi bo`lamiz.
+              </p>
+            </div>
+          </div>
+          <div class="flower__section-content">
+            <img
+              src="../static/images/arxideya.jpg"
+              alt="arxideya rasmi"
+              class="flower__section-content__img"
+            />
+            <div class="desc__wrapper">
+              <p class="flower__section-content__desc">
+                Bayramlar yoki yaqinlaringizning go`zal kunlarida ularni
+                ko`nglini shod qilishni xoxlaysizmi bunday holda bizning
+                gullarimiz sizga yordamchi bo`ladi.
+              </p>
+            </div>
+          </div>
+          <div class="flower__section-content">
+            <img
+              src="../static/images/sansiveria.jpg"
+              alt="sansiveria rasmi"
+              class="flower__section-content__img"
+            />
+            <div class="desc__wrapper">
+              <p class="flower__section-content__desc">
+                Ish faoliaytini yanada zavqli va energiyali tarzda tashkil
+                etishda gullarning ahamiyati qanchalik ahamiyatli ekanligini
+                bizning gullarmiz bilan xis qiling.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="contact__section">
+          <ul class="contact__list">
+            <li class="contact__item">
+              <span class="agro">Agroplanet</span
+              ><span class="seed">Seeds</span>
+            </li>
+            <li class="contact__item">
+              <img
+                src="../static/images/Location.svg"
+                alt="location icon"
+                class="contact__img"
+                width="20"
+                height="20"
+              /><a
+                href="https://maps.app.goo.gl/QNuYXcu6PEYx7Jf17"
+                class="contact__link contact__link-location"
+                >Andijon Boburshox ko`chasi 44</a
+              >
+            </li>
+            <li class="contact__item">
+              <img
+                src="../static/images/Calling.svg"
+                alt="phone img"
+                class="contact__img"
+                width="20"
+                height="20"
+              /><a class="contact__link" href="tel:+998 93 441 99 11"
+                >+998 93 441 99 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom-content">
+            <h5 class="footer__bottom-title">Maslahat oling</h5>
+            <p class="footer__bottom-desc">
+              Gullaringizni parvarishlashda qiynalyabsizmi, gullaringiz
+              kasallikga uchrayabdimi unday holda bizdan maslahat oling.
+            </p>
+          </div>
+          <ul class="footer__maxsulot-list">
+            <li class="footer__maxsulot-item footer__content-title">
+              Mahsulotlar
+            </li>
+            <li class="footer__maxsulot-item">
+              <a href="#" class="footer__maxsulot-link">Gullar</a>
+            </li>
+            <li class="footer__maxsulot-item">
+              <a href="#" class="footer__maxsulot-link">Urug`lar</a>
+            </li>
+            <li class="footer__maxsulot-item">
+              <a href="#" class="footer__maxsulot-link">O`g`itlar</a>
+            </li>
+            <li class="footer__maxsulot-item">
+              <a href="#" class="footer__maxsulot-link">Tuvaklar</a>
+            </li>
+          </ul>
+          <ul class="footer__social-list">
+            <li class="footer__social-item footer__content-title">
+              Ijtimoiy tarmoqlar
+            </li>
+            <li class="footer__social-item">
+              <img
+                src="../static/images/icon-telegram-app.svg"
+                alt="Telegram icon"
+                class="footer__social-img"
+              /><a
+                href="https://t.me/agroplanetseeds"
+                class="footer__social-link"
+                width="20"
+                height="20"
+                >Telegram</a
+              >
+            </li>
+            <li class="footer__social-item">
+              <img
+                src="../static/images/icon-instagram.svg"
+                alt="Instagram icon"
+                class="footer__social-img"
+                width="23"
+                height="23"
+              /><a
+                href="https://www.instagram.com/agroplanet_seeds?r=nametag"
+                class="footer__social-link"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+        <hr class="footer__line" />
+        <h6 class="footer__comp-info">2019-2023 Agroplanet Seeds</h6>
+      </footer>
+    </div>
+  </body>
+ </html>
+{% endblock %}
